@@ -16,7 +16,7 @@ domain=$1
 subdomain=$2
 
 if [[ -z "$subdomain" ]]; then
-  for sub in www 1b-01 web-01 web-02; do
+  for sub in www lb-01 web-01 web-02; do
     get_sub_info $domain $sub
   done
 else
